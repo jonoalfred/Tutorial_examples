@@ -1,0 +1,91 @@
+/* Some basic all round formatting */
+* {box-sizing: border-box}
+
+/* random font */
+body {
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace; margin:0}
+
+/* slides display set to none */
+.mySlides {display: none}
+
+/* Setting up images */
+img {
+    width: 200px;
+    height: 860px;
+    object-fit: cover;
+    vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  margin: auto;
+}
+
+/* back & next buttons */
+.click-back, .click-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(117, 187, 67);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "click-next button" to the right */
+.click-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.click-back:hover, .click-next:hover {
+  background-color: rgba(42, 73, 35, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #515154;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Progression indicator */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Config for progress indicator */
+.active, .dot:hover {
+  background-color: greenyellow;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.2s;
+}
+/* Keyframes from 40% to 100% */
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

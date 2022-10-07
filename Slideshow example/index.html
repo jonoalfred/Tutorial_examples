@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My slides yo.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img src="images/lambo1.png" style="width:100%">
+            <div class="text">car 1</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/lambo2.jpg" style="width:100%">
+            <div class="text">car 2</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="images/lambo3.jpg" style="width:100%">
+            <div class="text">car 3</div>
+        </div>
+
+        <a class="click-back" onclick="changeSlide(-1)">❮</a>
+        <a class="click-next" onclick="changeSlide(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
