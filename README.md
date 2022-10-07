@@ -6,11 +6,11 @@
 
 ## Getting Started
 
-### Executing program
+### Running the pages
 Ensure you have live server or alterntive installed on any ide
-Launch using go live button
+Launch using go live button when on any tutorial folder - ensure you are inside of the folder structure where the .html file exists
 
-Alternatively load onto webserver and open on localhost or appropriate domain address
+Alternatively load folder structure (e.g. Tutorial_examples/ Slideshow example onto webserver and open in browswer using localhost:portno (if local) or appropriate domain address (if Hosted)
 
 
 ## Authors
