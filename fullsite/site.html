@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Test site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+        <a href="#" class="logo-color no-margin ">Jono Test site</a>
+        <!-- Navigation links (hidden by default in order to not show items when not active) -->
+        <div id="myLinks">
+            <a href="#showcase">About</a>
+            <a href="#faq">Stuff</a>
+        </div>
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Showcase page -->
+    <section id="showcase">
+        <div class="expand-to-page background-color-black text-align-center">
+            <h2>Harrow</h2>
+        </div>
+
+    </section>
+    <!-- FAQ page -->
+    <section id="faq">
+        <div class="expand-to-page background-color-orange">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="images/lambo1.png" style="width:100%">
+                    <div class="text">car 1</div>
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="images/lambo2.jpg" style="width:100%">
+                    <div class="text">car 2</div>
+                </div>
+        
+                <div class="mySlides fade">
+                    <img src="images/lambo3.jpg" style="width:100%">
+                    <div class="text">car 3</div>
+                </div>
+        
+                <a class="click-back" onclick="changeSlide(-1)">❮</a>
+                <a class="click-next" onclick="changeSlide(1)">❯</a>
+        
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
