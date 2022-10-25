@@ -21,26 +21,28 @@ function showSlides(number) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  
+
   if (number > slides.length) {
-    slideIndex = 1}    
+    slideIndex = 1
+  }
 
   if (number < 1) {
-    slideIndex = slides.length}
-// Start of for loop for image display
+    slideIndex = slides.length
+  }
+  // Start of for loop for image display
   for (i = 0; i < slides.length; i++) {
     // Access of slides list, always is array name with square [] brackets | e.g. slides[0] is the first element inside the list
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
-//   End of for loop
+  //   End of for loop
 
-// Start of for loop for progres bar / indicator
+  // Start of for loop for progres bar / indicator
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-//   End of loop
+  //   End of loop
 
-// declaring slides display property as block at slideIndex-1 as its the item before
-// display the one image when the showslides function is called
-  slides[slideIndex-1].style.display = "block";  
+  // declaring slides display property as block at slideIndex-1 as its the item before
+  // display the one image when the showslides function is called
+  slides[slideIndex - 1].style.display = "block";
 }
