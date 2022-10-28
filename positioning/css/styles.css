@@ -1,32 +1,35 @@
-html{
-    background-color: cadetblue;
+html {
+  background-color: cadetblue;
 }
 
 div.relative {
   position: relative;
-  left: 20px;
+  left: 100px;
   border: 3px solid blue;
-}
-
-div.fixed {
-  position: fixed;
-  /* adjust the positions to see effect */
-  right: 0;
-  left: 0;
-  width: 200px;
-  border: 3px solid black;
 }
 
 div.absolute {
   position: absolute;
   top: 80px;
-  right: 0;
+  /* right: 50%; */
+  left: 50%;
   width: 300px;
   height: 100px;
   border: 3px solid #3f21ad;
 }
 
+/* This will work with scroll */
+div.fixed {
+  position: fixed;
+  /* adjust the positions to see effect */
+  /* right:0; */
+  left: 0;
+  width: 200px;
+  border: 3px solid black;
+}
 
+
+/* default margin and padding */
 div.sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -36,6 +39,6 @@ div.sticky {
   border: 2px solid #4c4caf;
 }
 
-div.add-height{
-    padding-bottom: 800px;
+div.add-height {
+  padding-bottom: 800px;
 }
