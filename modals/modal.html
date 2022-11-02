@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,31 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Modal example</title>
 </head>
+
 <body>
 
     <!-- Button to open modal -->
     <button id="button">Open Modal</button>
-    
+
     <!-- The Modal -->
     <div id="exampleModal" class="modal">
-    
+
         <!-- Modal content -->
         <div class="modal-content">
             <span class="exit">&times;</span>
+            <form>
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="firstname" name="firstname"><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="lastname" name="lastname">
+            </form>
+
             <p>This can be anything..</p>
             <a href="modal-page2.html">Another modal example page</a>
         </div>
-    
+
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
