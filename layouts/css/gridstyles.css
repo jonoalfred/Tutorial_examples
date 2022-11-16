@@ -1,0 +1,62 @@
+.item1 {
+  grid-area: header;
+}
+.item2 {
+  grid-area: menu;
+}
+.item3 {
+  grid-area: main;
+}
+.item4 {
+  grid-area: right;
+}
+.item5 {
+  grid-area: footer;
+}
+
+.item6 {
+  grid-area: left;
+}
+
+.grid-container {
+  display: grid;
+  /* 3 rows , 6 colums linked to grid areas above */
+  grid-template-areas:
+    'header header header header header header'
+    'left main main main right right'
+    'menu footer footer footer footer footer';
+
+  /*  Below sets gaps between row and columns*/
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+/* Grid with a typical cell formation */
+
+.grid-lines {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  background-color: green;
+  padding: 10px;
+}
+
+.grid-lines > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item1-lines {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
