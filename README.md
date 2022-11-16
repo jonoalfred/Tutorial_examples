@@ -1,4 +1,4 @@
-# Tutorial_examples
+# Website component examples
 
 ## Description
 
