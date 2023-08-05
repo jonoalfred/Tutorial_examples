@@ -1,4 +1,4 @@
-function openDrawer () {
+function openDrawer() {
   document.getElementById('mydrawer').style.width = '280px'
 }
 
